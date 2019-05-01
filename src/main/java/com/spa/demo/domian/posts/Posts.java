@@ -1,5 +1,7 @@
 package com.spa.demo.domian.posts;
 
+import java.time.LocalDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,7 +17,7 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-@Entity // 테이블과 링크될 클래스, _로 구성
+@Entity
 public class Posts extends BaseTimeEntity{
 
 	/*
@@ -44,6 +46,8 @@ public class Posts extends BaseTimeEntity{
         this.content = content;
         this.author = author;
     }
+
+	
 }
 
 

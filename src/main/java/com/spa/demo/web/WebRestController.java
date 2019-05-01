@@ -1,10 +1,13 @@
 package com.spa.demo.web;
 
+import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.spa.demo.domian.posts.Posts;
 import com.spa.demo.domian.posts.PostsRepository;
 import com.spa.demo.dto.posts.PostsSaveRequestDto;
 import com.spa.demo.service.PostsService;
@@ -35,6 +38,11 @@ public class WebRestController {
 	@PostMapping("/posts")
 	public Long savePosts(@RequestBody PostsSaveRequestDto dto){
 		return postsService.save(dto);
+	}
+	
+	@GetMapping("/posts")
+	public List<Posts> showPosts(){
+		return postsRepository.findAll();
 	}
 	
 }

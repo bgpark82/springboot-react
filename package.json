@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack --watch -d"
   },
   "repository": {
     "type": "git",
@@ -18,12 +18,14 @@
   "homepage": "https://github.com/pop8682/springboot-react#readme",
   "dependencies": {
     "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@types/node": "^11.13.8",
     "@types/react": "^16.8.15",
     "@types/react-dom": "^16.8.4",
+    "axios": "^0.18.0",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
     "react": "^16.8.6",
@@ -33,5 +35,8 @@
     "typescript": "^3.4.5",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.4.4"
   }
 }
