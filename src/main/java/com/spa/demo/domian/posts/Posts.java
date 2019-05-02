@@ -14,7 +14,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Getter
 @Entity
 public class Posts extends BaseTimeEntity{
 
@@ -45,6 +44,23 @@ public class Posts extends BaseTimeEntity{
         this.author = author;
     }
 
+	public Long getId() {
+		return id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+    
 	
 }
 
