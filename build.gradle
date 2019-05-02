@@ -4,7 +4,7 @@ plugins {
 }
 
 apply plugin: 'io.spring.dependency-management'
-apply plugin: 'net.ltgt.apt'
+
 
 group = 'com.spa'
 version = '0.0.1'
