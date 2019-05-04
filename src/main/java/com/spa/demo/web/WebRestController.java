@@ -1,7 +1,9 @@
 package com.spa.demo.web;
 
+import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -27,6 +29,8 @@ public class WebRestController {
      * }
 	 */
 	
+	
+	private Environment env;
 	private PostsRepository postsRepository;
 	private PostsService postsService;
 	
@@ -43,6 +47,14 @@ public class WebRestController {
 	@GetMapping("/posts")
 	public List<Posts> showPosts(){
 		return postsRepository.findAll();
+	}
+	
+	// 현재 profile 확인
+	@GetMapping("/profile")
+	public String getProfile () {
+	    return Arrays.stream(env.getActiveProfiles())
+	            .findFirst()
+	            .orElse("");
 	}
 	
 }
