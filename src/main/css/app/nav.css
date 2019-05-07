@@ -1,0 +1,25 @@
+
+.nav-container{
+    margin-top:30px;
+}
+
+.nav-profile{
+    width:100px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.nav-profile section{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    margin-top:5px;
+}
+
+.nav-profile p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 1.17;
+    word-wrap: normal;
+}

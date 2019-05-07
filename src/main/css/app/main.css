@@ -1,0 +1,20 @@
+.main-container{
+    margin-top:30px;
+}
+
+.main-container h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    word-wrap: normal;
+    /* font-family: "Source Sans Pro","APPLE SD Gothic Neo",HelveticaNeue,Helvetica,"NanumGothic","맑은 고딕","Malgun Gothic",arial,sans-serif; */
+}
+
+.main-container h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.17;
+    word-wrap: normal;
+    /* font-family: "Source Sans Pro","APPLE SD Gothic Neo",HelveticaNeue,Helvetica,"NanumGothic","맑은 고딕","Malgun Gothic",arial,sans-serif; */
+}

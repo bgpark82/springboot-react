@@ -23,7 +23,6 @@ componentWillMount=async()=>{
                 <div key={item.id}>
                     <p><strong>{item.title}</strong></p>
                     <p>{item.content}</p>
-                    <p>{item.createdDate}</p>
                 </div>
             )
         })}
