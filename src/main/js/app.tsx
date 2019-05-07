@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import Post from './Component/Posts'
 import '../css/app/nav.css'
 import '../css/app/main.css'
+import '../css/app/portfolio.css'
 
 export default class App extends Component {  
 
@@ -24,7 +25,7 @@ render() {
               <h1>Web Developer</h1>
               <h2>어제보다 더 나은, 웹 개발자 </h2>
               <h2><strong>박병길</strong>입니다.</h2>
-              <hr/>
+              <br/><br/><br/>
               
               <Post></Post>
             </div>

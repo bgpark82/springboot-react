@@ -1,0 +1,17 @@
+.portfolio h1 {
+    color: rgb(21, 134, 215);
+    margin-bottom: 0px;
+}
+
+.portfolio span {
+    margin-bottom: 0px;
+}
+
+.portfolio h2{
+    font-weight: 500
+}
+
+.portfolio p{
+    color:#8898aa;
+    font-weight: 300
+}
