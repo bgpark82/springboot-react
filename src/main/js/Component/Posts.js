@@ -35,7 +35,7 @@ componentWillMount=async()=>{
                       author:item.author,
                     }}}>
                     <h2><strong>{item.title}</strong></h2>
-                    <span>{item.content}</span>
+                    <p>{item.content}</p>
                     <hr/>
                   </Link>    
                 </div>

@@ -21,7 +21,7 @@ export default class Portfolio extends Component {
             <h1>{title}</h1>
             <p>{content}</p>
             <br/><br/>
-            <a target="_blank" rel="noopener noreferrer" href={author}>깃 허브로 가기😆</a><br/><br/>
+            <a target="_blank" href={author}>깃 허브로 가기😆</a><br/><br/>
             <span onClick={this.rollBack} > 뒤로가기 </span> 
           </div>
         </div>
