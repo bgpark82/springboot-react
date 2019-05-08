@@ -7,6 +7,10 @@ export default class Portfolio extends Component {
        
   }
 
+  rollBack=()=>{
+    this.props.history.push('/')
+  }
+
   render() {
     const {id,title, content, author} = this.props.location.state
     return (
@@ -17,7 +21,8 @@ export default class Portfolio extends Component {
             <h1>{title}</h1>
             <p>{content}</p>
             <br/><br/>
-            <a href={author}>깃 허브로 가기😆</a>
+            <a href={author}>깃 허브로 가기😆</a><br/><br/>
+            <span onClick={this.rollBack} > 뒤로가기 </span> 
           </div>
         </div>
         
