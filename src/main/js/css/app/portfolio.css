@@ -1,0 +1,27 @@
+.portfolio {
+    margin-top:30px;
+}
+
+.portfolio h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.17;
+    word-wrap: normal;
+}
+
+.portfolio p{
+    color:#8898aa;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.portfolio span{
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.portfolio strong{
+    font-weight: 600;
+    margin-bottom: 0px;
+}

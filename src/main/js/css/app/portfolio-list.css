@@ -1,0 +1,28 @@
+.portfolio-list h1 {
+    font-size: 30px;
+    color: rgb(21, 134, 215);
+    margin-bottom: 0px;
+}
+
+.portfolio-list-hr {
+    margin-top: 15px;
+}
+
+.portfolio-list span {
+    margin-bottom: 0px;
+}
+
+.portfolio-list h2{
+    font-weight: 500
+}
+
+.portfolio-list p{
+    color:#8898aa;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.portfolio-list a, a:visited, a:hover, a:active {
+    text-decoration:none; 
+    color:inherit;
+}

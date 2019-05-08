@@ -3,7 +3,7 @@ var path = require('path');
 module.exports = {
 
     entry: {  
-        app:'./src/main/js/app.tsx'  
+        app:'./src/main/js/app.js'  
     },   
         devtool: 'sourcemaps',  
         cache: true,  

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 
 export default class Posts extends Component {
 
@@ -13,23 +14,34 @@ componentWillMount=async()=>{
     this.setState({
         posts:res
     })
+    console.log(res);
 }
 
   render() {
     return (
-      <div className='portfolio'>
+      <div className='portfolio-list'>
         <h1>Projects</h1>
-        <span>지금까지의 프로젝트</span>
-        <hr/>
+        <p>지금까지의 프로젝트</p>
+        <hr className='portfolio-list-hr'/>
         {this.state.posts.map((item)=>{
             return(
                 <div key={item.id}>
+                  <Link to={{
+                    pathname:`/portfolio/${item.id}`,
+                    state:{
+                      id:item.id,
+                      title:item.title, 
+                      content:item.content,
+                      author:item.author,
+                    }}}>
                     <h2><strong>{item.title}</strong></h2>
-                    <p>{item.content}</p>
+                    <span>{item.content}</span>
                     <hr/>
+                  </Link>    
                 </div>
             )
         })}
+        
       </div>
     )
   }
