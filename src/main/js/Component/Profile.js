@@ -8,9 +8,9 @@ export default function Profile() {
         <img src="./img/tistory.png" alt="" className="nav-profile"/>
         <section>박병길</section>
         <p>bgpark82@gmail.com</p>
-            <i class="fab fa-git profile-space"></i>
-            <i class="fab fa-linkedin-in profile-space"></i>
-            <i class="far fa-comment"></i>
+            <a href="https://github.com/pop8682/"><i className="fab fa-git profile-space"></i></a>
+            <a href="https://www.linkedin.com/in/byeonggilpark/"><i className="fab fa-linkedin-in profile-space"></i></a>
+            <a href="https://bgpark.tistory.com/"><i className="far fa-comment"></i></a>
     </div>  
   )
 }
