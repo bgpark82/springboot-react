@@ -1,5 +1,6 @@
 var path = require('path');
 
+
 module.exports = {
 
     entry: {  
@@ -10,7 +11,8 @@ module.exports = {
         mode: 'development',   
     output: {  
         path: path.resolve(__dirname),  
-        filename: './src/main/resources/static/built/[name].bundle.js'  
+        filename: './src/main/resources/static/built/[name].bundle.js',
+        publicPath: '/'
     },  
     module: {  
         rules: [  
@@ -31,5 +33,10 @@ module.exports = {
             },  
         ]  
     },
+    devServer: {
+        historyApiFallback: true,
+        contentBase: './',
+        hot: true
+      },
     resolve: { extensions: ['.ts','.tsx','.js']}  
 };  

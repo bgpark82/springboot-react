@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import {withRouter} from 'react-router'
 
-export default class Posts extends Component {
+class Posts extends Component {
 
 state={
     posts:[]
@@ -17,11 +18,16 @@ componentWillMount=async()=>{
     console.log(res);
 }
 
+
+
+//https://www.zerocho.com/category/HTML&DOM/post/599d2fb635814200189fe1a7
+
   render() {
     return (
       <div className='portfolio-list'>
         <h1>Projects</h1>
         <p>지금까지의 프로젝트</p>
+        <button onClick={this.handleClick}>click</button>
         <hr className='portfolio-list-hr'/>
         {this.state.posts.map((item)=>{
             return(
@@ -38,6 +44,7 @@ componentWillMount=async()=>{
                     <p>{item.content}</p>
                     <hr/>
                   </Link>    
+                  
                 </div>
             )
         })}
@@ -46,3 +53,5 @@ componentWillMount=async()=>{
     )
   }
 }
+
+export default withRouter(Posts)

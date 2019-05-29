@@ -3,8 +3,14 @@ import Post from './Posts'
 import Profile from './Profile'
 import '../css/app/main.css'
 import '../css/app/portfolio-list.css'
+import { Route, BrowserRouter as Router, Switch} from 'react-router-dom'
 
 export default class Home extends Component {
+
+  handleClick=()=>{
+    this.props.history.push('/test')
+  }
+
   render() {
     return (
       
@@ -21,8 +27,8 @@ export default class Home extends Component {
               <Post></Post>
             </div>
         </div>
-    
       </div>
     )
   }
 }
+
