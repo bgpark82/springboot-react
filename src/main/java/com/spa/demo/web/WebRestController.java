@@ -19,7 +19,7 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 @RestController
-@CrossOrigin(origins= {"http://localhost:4200","http://bgpark82.com"})
+@CrossOrigin(origins= "http://bgpark82.com")
 public class WebRestController {
 
 	/* @Autowired는 비권장방식입니다
